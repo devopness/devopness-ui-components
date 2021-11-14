@@ -1,0 +1,25 @@
+{
+  "name": "@devopness/design-system",
+  "version": "0.0.0",
+  "description": "Devopness Design System",
+  "main": "dist/index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devopness/devopness-design-system.git"
+  },
+  "keywords": [
+    "Design System",
+    "UI Components",
+    "Web Components",
+    "Storybook",
+    "Devopness"
+  ],
+  "author": "Devopness (https://www.devopness.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devopness/devopness-design-system/issues"
+  },
+  "homepage": "https://github.com/devopness/devopness-design-system#readme"
+}
