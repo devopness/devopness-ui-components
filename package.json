@@ -1,9 +1,18 @@
 {
   "name": "@devopness/design-system",
   "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Devopness Design System",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "rm -Rf ./dist && tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -21,5 +30,19 @@
   "bugs": {
     "url": "https://github.com/devopness/devopness-design-system/issues"
   },
-  "homepage": "https://github.com/devopness/devopness-design-system#readme"
+  "homepage": "https://github.com/devopness/devopness-design-system#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-controls": "^6.3.12",
+    "@storybook/addon-docs": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/web-components": "^6.3.12",
+    "babel-loader": "^8.2.3",
+    "lit-html": "^2.0.2",
+    "storybook": "^6.3.12",
+    "typescript": "^4.4.4"
+  }
 }
