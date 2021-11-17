@@ -1,5 +1,5 @@
 {
-  "name": "@devopness/design-system",
+  "name": "@devopness/ui-components",
   "version": "0.0.0",
   "publishConfig": {
     "access": "public"
