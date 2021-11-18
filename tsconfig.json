@@ -1,32 +1,25 @@
 {
-    "compilerOptions": {
-      "rootDir": "src",
-      "outDir": "./dist",
-      "target": "esnext",
-      "lib": [
-        "dom",
-        "dom.iterable",
-        "esnext"
-      ],
-      "allowJs": true,
-      "checkJs": false,
-      "skipLibCheck": true,
-      "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true,
-      "strict": true,
-      "forceConsistentCasingInFileNames": true,
-      "module": "esnext",
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "jsx": "react",
-      "baseUrl": ".",
-      "paths": {
-        "app": ["src/*"],
-        "assets": ["src/assets/*"]
-      }
-    },
-    "include": [
-      "src"
-    ]
-  }
-  
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "app": ["src/components/*", "src/tokens/*"],
+      "assets": ["src/assets/*"]
+    }
+  },
+  "include": ["src/components", "src/tokens"]
+}
