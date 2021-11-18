@@ -11,7 +11,7 @@ export const Auxiliary = () =>
   ` <devopness-button type="outlinedauxiliary">Auxiliary</devopness-button> `;
 export const Secondary = () =>
   ` <devopness-button type="outlinedsecondary">Secondary</devopness-button> `;
-  export const Medium = () =>
+export const Medium = () =>
   ` <devopness-button size="medium">Medium</devopness-button> `;
 export const Disabled = () =>
   ` <devopness-button disabled>Disabled</devopness-button> `;

@@ -90,13 +90,13 @@ class Button extends HTMLElement {
 
   connectedCallback() {
     this.attachShadow({ mode: "open" });
-    
+
     if (!this.shadowRoot) return;
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-    this.color = this.getAttribute('color') || '';
-    this.backgroundColor = this.getAttribute('backgroundcolor') || '';
-    this.borderColor = this.getAttribute('bordercolor') || '';
+    this.color = this.getAttribute("color") || "";
+    this.backgroundColor = this.getAttribute("backgroundcolor") || "";
+    this.borderColor = this.getAttribute("bordercolor") || "";
   }
 
   attributeChangedCallback(attr: string, oldValue: string, newValue: string) {
