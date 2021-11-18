@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "rootDir": "src",
+      "rootDir": "./",
       "outDir": "./dist",
       "target": "esnext",
       "lib": [
@@ -21,12 +21,13 @@
       "jsx": "react",
       "baseUrl": ".",
       "paths": {
-        "app": ["src/*"],
-        "assets": ["src/assets/*"]
+        "app": ["components/*"],
+        "assets": ["components/assets/*"]
       }
     },
     "include": [
-      "src"
+      "components",
+      "tokens"
     ]
   }
   
