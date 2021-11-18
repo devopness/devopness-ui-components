@@ -37,7 +37,7 @@ export const tokens = {
     border: {
       button: {
         medium: "1px",
-        large: "2px",
+        large: "1px",
       },
     },
   },
