@@ -46,7 +46,7 @@
     "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
-    "@storybook/html": "^6.3.12",
+    "@storybook/web-components": "^6.3.12",
     "babel-loader": "^8.2.3",
     "lit-html": "^2.0.2",
     "storybook": "^6.3.12",
