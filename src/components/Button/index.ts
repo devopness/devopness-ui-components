@@ -163,4 +163,12 @@ class Button extends HTMLElement {
   }
 }
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "devopness-button": any;
+    }
+  }
+}
+
 customElements.define("devopness-button", Button);
