@@ -7,8 +7,15 @@
   "description": "Devopness Design System",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist/**/*.d.ts",
+    "dist/**/*.js",
+    "dist/**/*.js.map",
+    "!dist/**/*.stories.js",
+    "!dist/**/*.test.js"
   ],
+  "exports": {
+    "./": "./dist/components/"
+  },
   "scripts": {
     "build": "rm -Rf ./dist && tsc",
     "storybook": "start-storybook -p 6006",
