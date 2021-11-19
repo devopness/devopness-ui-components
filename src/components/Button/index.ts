@@ -1,7 +1,6 @@
 import { tokens } from "../../tokens/index";
 
 const template = document.createElement("template");
-
 template.innerHTML = `
   <style>
     button {
@@ -76,7 +75,7 @@ template.innerHTML = `
   </button>
 `;
 
-class Button extends HTMLElement {
+export class DevopnessButton extends HTMLElement {
   _color = "";
   _backgroundColor = "";
   _borderColor = "";
@@ -171,4 +170,4 @@ declare global {
   }
 }
 
-customElements.define("devopness-button", Button);
+customElements.define("devopness-button", DevopnessButton);
