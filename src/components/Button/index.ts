@@ -59,13 +59,14 @@ template.innerHTML = `
       margin: 0;
     }
 
-    :host([disabled]) button {
+    :host([disabled=""]) button,
+    :host([disabled="disabled"]) button {
       opacity: 0.5;
       cursor: initial;
       cursor: not-allowed;
     }
 
-    :host(:not([disabled]):hover) button {
+    :host(:not([disabled=""]):not([disabled="disabled"]):hover) button {
       filter: brightness(75%);
     }
   </style>
@@ -93,6 +94,16 @@ class Button extends HTMLElement {
 
     if (!this.shadowRoot) return;
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.addEventListener(
+      "click",
+      (event) => {
+        if (this.disabled) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      },
+      true
+    );
 
     this.color = this.getAttribute("color") || "";
     this.backgroundColor = this.getAttribute("backgroundcolor") || "";
@@ -109,6 +120,13 @@ class Button extends HTMLElement {
     } else if (attribute === "bordercolor") {
       this.borderColor = newValue;
     }
+  }
+
+  get disabled() {
+    return (
+      this.getAttribute("disabled") === "" ||
+      this.getAttribute("disabled")?.toLocaleLowerCase() === "disabled"
+    );
   }
 
   set color(value) {
