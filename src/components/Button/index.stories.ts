@@ -1,6 +1,6 @@
-import { html } from "lit-html";
+import { html } from "lit/html.js";
 
-import "./index.ts";
+import "./index-lit.ts";
 
 interface ButtonArgs {
   click: {
