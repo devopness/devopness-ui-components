@@ -5,7 +5,7 @@ import { customElement, property } from "lit/decorators.js";
 import { tokens } from "../../tokens/index";
 
 @customElement("devopness-button")
-class DevopnessButton extends LitElement {
+export class DevopnessButton extends LitElement {
   @property() color?: string = "";
   @property() backgroundColor?: string = "";
   @property() borderColor?: string = "";
