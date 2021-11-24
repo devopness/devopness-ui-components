@@ -1,12 +1,20 @@
-# devopness-ui-components
+# Devopness UI Components
+
+[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/devopness/devopness-ui-components/blob/master/LICENSE)
+
+[![NPM](https://nodei.co/npm/@devopness/ui-components.png?downloads=true&stars=true)](https://nodei.co/npm/@devopness/ui-components/)
 
 This project is a Web Components implementation of Devopness' design system that intends to be future-proof and interoperable with any frontend library and framework available.
 
 ## Usage
 
-### Installing
+### Installing/Upgrading
 
-```
+```bash
+# Using npm
+npm install @devopness/ui-components
+
+# Using yarn
 yarn add @devopness/ui-components
 ```
 
