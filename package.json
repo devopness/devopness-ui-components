@@ -1,6 +1,6 @@
 {
   "name": "@devopness/ui-components",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "publishConfig": {
     "access": "public"
   },
@@ -19,7 +19,8 @@
   "scripts": {
     "build": "rm -Rf ./dist && tsc",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",

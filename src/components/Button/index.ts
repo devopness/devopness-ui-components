@@ -3,6 +3,11 @@ import { tokens } from "../../tokens/index";
 const template = document.createElement("template");
 template.innerHTML = `
   <style>
+    :host {
+      margin: 0 15px;
+      display: block;
+    }
+
     button {
       display: flex;
       justify-content: center;
@@ -14,7 +19,6 @@ template.innerHTML = `
       text-transform: uppercase;
       cursor: pointer;
       padding: 5px 15px;
-      margin: 0 15px;
       border: 1px;
       border-radius: 25px;
       border-width: ${tokens.width.border.button.large};
@@ -50,11 +54,13 @@ template.innerHTML = `
       background-color: ${tokens.color.background.button.outlinedAuxiliary};
     }
 
-    :host([revertorientation]) button {
+    :host([revertorientation=""]) button,
+    :host([revertorientation="revertorientation"]) button {
       flex-direction: row-reverse;
     }
 
-    :host([nomargin]) button {
+    :host([nomargin=""]),
+    :host([nomargin="nomargin"]) {
       margin: 0;
     }
 
